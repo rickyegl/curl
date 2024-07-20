@@ -163,8 +163,7 @@ def main():
         from_pixels=(args.encoder_type == 'pixel'),
         height=args.pre_transform_image_size,
         width=args.pre_transform_image_size,
-        frame_skip=args.action_repeat,
-        render_kwargs={"mode": "offscreen"}
+        frame_skip=args.action_repeat
     )
  
     env.seed(args.seed)
